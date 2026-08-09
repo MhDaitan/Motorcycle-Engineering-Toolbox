@@ -23,6 +23,14 @@ categories = {
     },
 
     "3": {
+        "name": "Mass",
+        "conversions": {
+            "1": ("Kilogram → Gram", conversions.kilogram_to_gram, "kg", "g"),
+            "2": ("Gram → Kilogram", conversions.gram_to_kilogram, "g", "kg"),
+        }
+    },
+
+    "4": {
         "name": "Pressure",
         "conversions": {
             "1": ("Bar → Pascal", conversions.bar_to_pascal, "bar", "Pa"),
@@ -30,7 +38,7 @@ categories = {
         }
     },
 
-    "4": {
+    "5": {
         "name": "Torque",
         "conversions": {
             "1": (

@@ -44,3 +44,18 @@ def newton_meter_to_kilonewton_meter(value):
 def kilonewton_meter_to_newton_meter(value):
     return value * 1000
 
+
+def kilogram_to_gram(value):
+    return value * 1000
+
+
+def gram_to_kilogram(value):
+    return value / 1000
+
+
+def kilogram_to_gram(value):
+    return value * 1000
+
+
+def gram_to_kilogram(value):
+    return value / 1000
