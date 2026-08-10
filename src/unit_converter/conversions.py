@@ -36,6 +36,29 @@ def bar_to_pascal(value):
 def pascal_to_bar(value):
     return value / 100000
 
+def kilopascal_to_pascal(value):
+    return value * 1000
+
+
+def pascal_to_kilopascal(value):
+    return value / 1000
+
+
+def megapascal_to_pascal(value):
+    return value * 1000000
+
+
+def pascal_to_megapascal(value):
+    return value / 1000000
+
+
+def psi_to_pascal(value):
+    return value * 6894.757293168
+
+
+def pascal_to_psi(value):
+    return value / 6894.757293168
+
 
 def newton_meter_to_kilonewton_meter(value):
     return value / 1000

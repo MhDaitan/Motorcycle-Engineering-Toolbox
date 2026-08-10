@@ -38,3 +38,26 @@ def test_kilometer_per_hour_to_meter_per_second():
 
 def test_meter_per_second_to_kilometer_per_hour():
     assert conversions.meter_per_second_to_kilometer_per_hour(10) == 36
+
+def test_kilopascal_to_pascal():
+    assert conversions.kilopascal_to_pascal(2) == 2000
+
+
+def test_pascal_to_kilopascal():
+    assert conversions.pascal_to_kilopascal(2000) == 2
+
+
+def test_megapascal_to_pascal():
+    assert conversions.megapascal_to_pascal(2) == 2000000
+
+
+def test_pascal_to_megapascal():
+    assert conversions.pascal_to_megapascal(2000000) == 2
+
+
+def test_psi_to_pascal():
+    assert conversions.psi_to_pascal(1) == 6894.757293168
+
+
+def test_pascal_to_psi():
+    assert conversions.pascal_to_psi(6894.757293168) == 1

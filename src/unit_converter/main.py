@@ -50,8 +50,14 @@ categories = {
     "5": {
         "name": "Pressure",
         "conversions": {
-            "1": ("Bar → Pascal", conversions.bar_to_pascal, "bar", "Pa"),
-            "2": ("Pascal → Bar", conversions.pascal_to_bar, "Pa", "bar"),
+        "1": ("Bar → Pascal", conversions.bar_to_pascal, "bar", "Pa"),
+        "2": ("Pascal → Bar", conversions.pascal_to_bar, "Pa", "bar"),
+        "3": ("Kilopascal → Pascal", conversions.kilopascal_to_pascal, "kPa", "Pa"),
+        "4": ("Pascal → Kilopascal", conversions.pascal_to_kilopascal, "Pa", "kPa"),
+        "5": ("Megapascal → Pascal", conversions.megapascal_to_pascal, "MPa", "Pa"),
+        "6": ("Pascal → Megapascal", conversions.pascal_to_megapascal, "Pa", "MPa"),
+        "7": ("PSI → Pascal", conversions.psi_to_pascal, "psi", "Pa"),
+        "8": ("Pascal → PSI", conversions.pascal_to_psi, "Pa", "psi"),
         }
     },
 
