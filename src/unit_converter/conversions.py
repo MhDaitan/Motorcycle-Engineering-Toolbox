@@ -89,3 +89,10 @@ def kilometer_per_hour_to_meter_per_second(value):
 
 def meter_per_second_to_kilometer_per_hour(value):
     return value * 3.6
+
+def newton_meter_to_foot_pound(value):
+    return value * 0.7375621493
+
+
+def foot_pound_to_newton_meter(value):
+    return value / 0.7375621493

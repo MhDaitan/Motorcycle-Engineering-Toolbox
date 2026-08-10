@@ -65,16 +65,28 @@ categories = {
         "name": "Torque",
         "conversions": {
             "1": (
-                "Newton metre → Kilonewton metre",
-                conversions.newton_meter_to_kilonewton_meter,
-                "N·m",
-                "kN·m"
-            ),
-            "2": (
-                "Kilonewton metre → Newton metre",
-                conversions.kilonewton_meter_to_newton_meter,
-                "kN·m",
-                "N·m"
+            "Newton metre → Kilonewton metre",
+            conversions.newton_meter_to_kilonewton_meter,
+            "N·m",
+            "kN·m"
+        ),
+        "2": (
+            "Kilonewton metre → Newton metre",
+            conversions.kilonewton_meter_to_newton_meter,
+            "kN·m",
+            "N·m"
+        ),
+        "3": (
+            "Newton metre → Foot pound",
+            conversions.newton_meter_to_foot_pound,
+            "N·m",
+            "ft·lbf"
+        ),
+        "4": (
+            "Foot pound → Newton metre",
+            conversions.foot_pound_to_newton_meter,
+            "ft·lbf",
+            "N·m"
             ),
         }
     }

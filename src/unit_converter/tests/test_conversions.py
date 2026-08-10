@@ -61,3 +61,10 @@ def test_psi_to_pascal():
 
 def test_pascal_to_psi():
     assert conversions.pascal_to_psi(6894.757293168) == 1
+
+def test_newton_meter_to_foot_pound():
+    assert conversions.newton_meter_to_foot_pound(1) == 0.7375621493
+
+
+def test_foot_pound_to_newton_meter():
+    assert conversions.foot_pound_to_newton_meter(0.7375621493) == 1
