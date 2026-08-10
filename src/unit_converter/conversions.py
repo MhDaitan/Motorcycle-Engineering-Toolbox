@@ -59,3 +59,10 @@ def kilogram_to_gram(value):
 
 def gram_to_kilogram(value):
     return value / 1000
+
+def kilometer_per_hour_to_meter_per_second(value):
+    return value / 3.6
+
+
+def meter_per_second_to_kilometer_per_hour(value):
+    return value * 3.6

@@ -31,3 +31,10 @@ def test_kilogram_to_gram():
 
 def test_gram_to_kilogram():
     assert conversions.gram_to_kilogram(2500) == 2.5
+
+def test_kilometer_per_hour_to_meter_per_second():
+    assert conversions.kilometer_per_hour_to_meter_per_second(36) == 10
+
+
+def test_meter_per_second_to_kilometer_per_hour():
+    assert conversions.meter_per_second_to_kilometer_per_hour(10) == 36

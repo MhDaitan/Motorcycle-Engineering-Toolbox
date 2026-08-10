@@ -29,8 +29,25 @@ categories = {
             "2": ("Gram → Kilogram", conversions.gram_to_kilogram, "g", "kg"),
         }
     },
-
     "4": {
+    "name": "Speed",
+    "conversions": {
+        "1": (
+            "Kilometre/saat → Metre/saniye",
+            conversions.kilometer_per_hour_to_meter_per_second,
+            "km/h",
+            "m/s"
+        ),
+        "2": (
+            "Metre/saniye → Kilometre/saat",
+            conversions.meter_per_second_to_kilometer_per_hour,
+            "m/s",
+            "km/h"
+        ),
+    }
+    },
+
+    "5": {
         "name": "Pressure",
         "conversions": {
             "1": ("Bar → Pascal", conversions.bar_to_pascal, "bar", "Pa"),
@@ -38,7 +55,7 @@ categories = {
         }
     },
 
-    "5": {
+    "6": {
         "name": "Torque",
         "conversions": {
             "1": (
