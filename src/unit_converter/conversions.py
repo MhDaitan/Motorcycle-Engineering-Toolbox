@@ -96,3 +96,18 @@ def newton_meter_to_foot_pound(value):
 
 def foot_pound_to_newton_meter(value):
     return value / 0.7375621493
+
+def watt_to_kilowatt(value):
+    return value / 1000
+
+
+def kilowatt_to_watt(value):
+    return value * 1000
+
+
+def horsepower_to_kilowatt(value):
+    return value * 0.745699872
+
+
+def kilowatt_to_horsepower(value):
+    return value / 0.745699872

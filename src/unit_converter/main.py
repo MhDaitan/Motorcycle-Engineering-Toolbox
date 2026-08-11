@@ -2,6 +2,7 @@ import conversions
 
 
 categories = {
+
     "1": {
         "name": "Length",
         "conversions": {
@@ -89,16 +90,58 @@ categories = {
             "N·m"
             ),
         }
-    }
+    },
+
+    "7": {
+    "name": "Power",
+    "conversions": {
+        "1": (
+            "Watt → Kilowatt",
+            conversions.watt_to_kilowatt,
+            "W",
+            "kW"
+        ),
+        "2": (
+            "Kilowatt → Watt",
+            conversions.kilowatt_to_watt,
+            "kW",
+            "W"
+        ),
+        "3": (
+            "Horsepower → Kilowatt",
+            conversions.horsepower_to_kilowatt,
+            "hp",
+            "kW"
+        ),
+        "4": (
+            "Kilowatt → Horsepower",
+            conversions.kilowatt_to_horsepower,
+            "kW",
+            "hp"
+        ),
+    },
+}
 }
 
-while True:
+def show_categories():
     print("\n=== UNIT CONVERTER ===")
 
     for number, category in categories.items():
         print(f"{number}. {category['name']}")
 
     print("0. Çıkış")
+
+
+def show_conversions(category):
+    print(f"\n=== {category['name'].upper()} ===")
+
+    for number, conversion in category["conversions"].items():
+        print(f"{number}. {conversion[0]}")
+
+    print("0. Geri")
+
+while True:
+    show_categories()
 
     category_choice = input("Kategori seç: ")
 
@@ -113,12 +156,8 @@ while True:
     selected_category = categories[category_choice]
 
     while True:
-        print(f"\n=== {selected_category['name'].upper()} ===")
+        show_conversions(selected_category)
 
-        for number, conversion in selected_category["conversions"].items():
-            print(f"{number}. {conversion[0]}")
-
-        print("0. Geri")
 
         conversion_choice = input("Dönüşüm seç: ")
 
