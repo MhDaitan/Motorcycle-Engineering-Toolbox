@@ -1,6 +1,7 @@
 import conversions
 
 
+
 categories = {
 
     "1": {
@@ -120,7 +121,44 @@ categories = {
             "hp"
         ),
     },
-}
+    },
+
+    "8": {
+    "name": "Angle",
+    "conversions": {
+        "1": (
+            "Degree → Radian",
+            conversions.degree_to_radian,
+            "°",
+            "rad"
+        ),
+        "2": (
+            "Radian → Degree",
+            conversions.radian_to_degree,
+            "rad",
+            "°"
+        ),
+    },
+    },
+
+    "9": {
+    "name": "Rotation",
+    "conversions": {
+        "1": (
+            "RPM → Radyan/saniye",
+            conversions.rpm_to_radian_per_second,
+            "rpm",
+            "rad/s"
+        ),
+        "2": (
+            "Radyan/saniye → RPM",
+            conversions.radian_per_second_to_rpm,
+            "rad/s",
+            "rpm"
+        ),
+    },
+    },
+
 }
 
 def show_categories():
@@ -182,4 +220,4 @@ while True:
 
         result = conversion_function(value)
 
-        print(f"{value} {from_unit} = {result} {to_unit}")
+        print(f"{value:g} {from_unit} = {result:.6g} {to_unit}")

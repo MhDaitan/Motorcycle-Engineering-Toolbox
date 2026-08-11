@@ -1,3 +1,4 @@
+import pytest
 from src.unit_converter import conversions
 
 
@@ -83,3 +84,17 @@ def test_horsepower_to_kilowatt():
 
 def test_kilowatt_to_horsepower():
     assert conversions.kilowatt_to_horsepower(0.745699872) == 1
+
+def test_degree_to_radian():
+    assert conversions.degree_to_radian(180) == pytest.approx(3.141592653589793)
+
+
+def test_radian_to_degree():
+    assert conversions.radian_to_degree(3.141592653589793) == pytest.approx(180)
+
+def test_rpm_to_radian_per_second():
+    assert conversions.rpm_to_radian_per_second(60) == pytest.approx(2 * 3.141592653589793)
+
+
+def test_radian_per_second_to_rpm():
+    assert conversions.radian_per_second_to_rpm(2 * 3.141592653589793) == pytest.approx(60)

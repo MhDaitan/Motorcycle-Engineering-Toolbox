@@ -1,3 +1,5 @@
+import math
+
 def meter_to_millimeter(value):
     return value * 1000
 
@@ -111,3 +113,17 @@ def horsepower_to_kilowatt(value):
 
 def kilowatt_to_horsepower(value):
     return value / 0.745699872
+
+def degree_to_radian(value):
+    return value * math.pi / 180
+
+
+def radian_to_degree(value):
+    return value * 180 / math.pi
+
+def rpm_to_radian_per_second(value):
+    return value * 2 * math.pi / 60
+
+
+def radian_per_second_to_rpm(value):
+    return value * 60 / (2 * math.pi)
